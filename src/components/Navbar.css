@@ -1,0 +1,140 @@
+.nav_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    /* border: 2px solid red; */
+    width: 100%;
+    margin: 2rem auto;
+    margin-bottom: 10rem;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--light-gray);
+    background-color: white;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+ul li a{
+    color: var(--dark-gray);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    padding: 2.5rem;
+    font-size: 2rem;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.avatar-logo{
+    width: 40%;
+}
+
+a:hover{
+    color: var(--dark-blue);
+    border-bottom: 3px solid var(--primary-orange);
+}
+
+.cart-logo,.avatar-logo{
+    cursor: pointer;
+}
+
+.menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .menu{
+        display: block;
+        width: 1.8rem;
+        cursor: pointer;
+    }
+
+    .nav_items{
+        position: relative;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        width: 40%;
+        left: -1000px;
+        top: 7.7rem;
+        padding: 1rem;
+        z-index: 2;
+        height: 50vh;
+        background-color: gray;
+        transition: all .5s ease;
+        
+    }
+
+    .active{
+        left: 0;
+    }
+
+    ul li a{
+        color: white;
+    }
+
+    .avatar-logo{
+        width: 40%;
+    }
+
+    .left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    ul{
+        width: 100%;
+        top: 6.3rem;
+    }
+
+    ul li a{
+        font-size: 1.8rem;
+    }
+    .nav_items{
+        padding: 1rem;
+    }
+    .logo_name{
+        font-size: 2.1rem;
+    }
+
+    .avatar-logo{
+        width: 30%;
+    }
+    
+    .menu{
+        width: 1.6rem;
+    }
+}    
