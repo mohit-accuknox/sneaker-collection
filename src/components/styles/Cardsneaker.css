@@ -1,10 +1,10 @@
 .card_container{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     margin-top: 2rem;
-    width: 80%;
+    width: 100%;
     gap: 2rem;
 }
 
@@ -52,6 +52,27 @@
 .add_card:hover{
     background-color: rgba(255, 166, 98, 0.7);
     cursor: pointer;
+}
+
+@media screen and (max-width: 1400px) {
+    .image img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .image img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .image img{
+        width: 180px;
+        height: 180px;
+    }
 }
 
 @media screen and (max-width: 500px) {
