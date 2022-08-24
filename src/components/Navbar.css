@@ -58,6 +58,10 @@ a:hover{
     display: none;
 }
 
+.logo_name a{
+    color: var(--dark-blue)
+}
+
 
 @media screen and (max-width: 1000px) {
     .menu{

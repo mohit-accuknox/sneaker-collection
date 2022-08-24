@@ -1,24 +1,25 @@
 import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
 import "./Navbar.css"
 
 export const Navbar = () => {
-    const [isActive, setIsactive] = useState(false);
+    const [isActive, setIsActive] = useState(false);
 
     return (
       <div>
           <nav className="nav_items">
             <div className="left">
-              <img src="/images/icon-menu.png" alt="menu-icon" className="menu" onClick={() => {setIsactive(!isActive)}}/>
-              <h1 className="logo_name">sneakers</h1>
+              <img src="/images/icon-menu.png" alt="menu-icon" className="menu" onClick={() => {setIsActive(!isActive)}}/>
+              <h1 className="logo_name"><Link to='/'>sneakers</Link></h1>
               <ul className={isActive ? 'active' : 'nav_list'}>
                 <li>
-                  <a href="#">Collections</a>
+                  <Link to='/collection'>Collections</Link>
                 </li>
                 <li>
-                  <a href="#">Men</a>
+                  <Link to='/men'>Men</Link>
                 </li>
                 <li>
-                  <a href="#">Women</a>
+                  <Link to='/women'>Women</Link>
                 </li>
                 <li>
                   <a href="#">About</a>

@@ -105,3 +105,81 @@ export const sectionFourItems = [
     img: "https://www.seekpng.com/png/full/413-4135423_light-up-shoes-png.png",
   },
 ];
+
+export const MenDataOne = [
+  {
+    id: 16,
+    name: "Red Nike",
+    price: "3,000",
+    img: "https://png.pngitem.com/pimgs/s/488-4885934_sneakers-png-photo-hd-image-of-sneakers-png.png",
+  },
+  {
+    id: 17,
+    name: "Black Orange",
+    price: "6,000",
+    img: "https://png.pngitem.com/pimgs/s/502-5029008_sneakers-png-download-transparent-background-sneaker-png-png.png",
+  },
+  {
+    id: 18,
+    name: "Green Nike",
+    price: "8,000",
+    img: "https://png.pngitem.com/pimgs/s/743-7434835_sneakers-png-download-transparent-png.png",
+  },
+  {
+    id: 19,
+    name: "White Reebok",
+    price: "6,000",
+    img: "https://png.pngitem.com/pimgs/s/190-1902984_outside-view-of-white-reebok-club-c-sneakers.png",
+  },
+  {
+    id: 20,
+    name: "Orange Nike",
+    price: "8,000",
+    img: "https://png.pngitem.com/pimgs/s/130-1300632_transparent-russell-westbrook-png-sneakers-png-download.png",
+  },
+  {
+    id: 21,
+    name: "Fila",
+    price: "5,000",
+    img: "https://png.pngitem.com/pimgs/s/11-119530_sneakers-fila-ray-f-low-white-mizuno-sneakers.png",
+  },
+];
+
+export const womenDataOne = [
+  {
+    id: 22,
+    name: "Pink Nike",
+    price: "4,000",
+    img: "https://png.pngitem.com/pimgs/s/488-4885938_nike-airforce1-nikeairforce-purple-trainer-sneaker-sneakers-hd.png",
+  },
+  {
+    id: 23,
+    name: "White Sneaker",
+    price: "6,000",
+    img: "https://png.pngitem.com/pimgs/s/488-4886475_sneakers-hd-png-download.png",
+  },
+  {
+    id: 24,
+    name: "Cyan balenciaga",
+    price: "8,000",
+    img: "https://png.pngitem.com/pimgs/s/212-2127909_shoe-only-01-sneakers-hd-png-download.png",
+  },
+  {
+    id: 25,
+    name: "Purple Nike",
+    price: "5,000",
+    img: "https://png.pngitem.com/pimgs/s/114-1149906_sneakers-skate-shoe-nike-one-transparent-background-png.png",
+  },
+  {
+    id: 26,
+    name: "White Puma",
+    price: "9,000",
+    img: "https://png.pngitem.com/pimgs/s/746-7467293_white-puma-low-sneakers-x-ray-game-sneakers.png",
+  },
+  {
+    id: 27,
+    name: "Black Jordans",
+    price: "12,000",
+    img: "https://w7.pngwing.com/pngs/721/19/png-transparent-air-jordan-shoe-nike-sneakers-sneaker-collecting-michael-jordan-white-basketballschuh-outdoor-shoe-thumbnail.png",
+  },
+];
