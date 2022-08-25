@@ -1,0 +1,55 @@
+.notFound{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    margin: -4rem 0 5rem 0
+}
+
+.errorImg{
+    width: 50%;
+}
+
+.errorHeading{
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+.errorContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.errorTitle{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+.errorMessage{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+.goBack{
+    width: 60%;
+    padding: 1.8rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: var(--primary-orange);
+    color: white;
+    font-size: 1.8rem;
+}
+
+.goBack:hover{
+    background-color: rgba(255, 166, 98, 0.7);
+    cursor: pointer;
+}

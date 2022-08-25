@@ -1,47 +1,60 @@
-import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
-import "./Navbar.css"
+import React, { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
+import "./Navbar.css";
 
 export const Navbar = () => {
-    const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
-    return (
-      <div>
-          <nav className="nav_items">
-            <div className="left">
-              <img src="/images/icon-menu.png" alt="menu-icon" className="menu" onClick={() => {setIsActive(!isActive)}}/>
-              <h1 className="logo_name"><Link to='/'>sneakers</Link></h1>
-              <ul className={isActive ? 'active' : 'nav_list'}>
-                <li>
-                  <Link to='/collection'>Collections</Link>
-                </li>
-                <li>
-                  <Link to='/men'>Men</Link>
-                </li>
-                <li>
-                  <Link to='/women'>Women</Link>
-                </li>
-                <li>
-                  <a href="#">About</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div className="right">
-              <img
-                className="cart-logo"
-                src="/images/icon-cart.png"
-                alt="cart-icon"
-              />
-              <img
-                className="avatar-logo"
-                src="/images/image-avatar.png"
-                alt="avatar-img"
-              />
-            </div>
-          </nav>
+  const handleNavLink = () => {
+    setIsActive(isActive, "nav_list");
+  };
+
+  return (
+    <div>
+      <nav className="nav_items">
+        <div className="left">
+          <img
+            src="/images/icon-menu.png"
+            alt="menu-icon"
+            className="menu"
+            onClick={() => {
+              setIsActive(!isActive);
+            }}
+          />
+          <h1 className="logo_name">sneakers</h1>
+          <ul className={isActive ? "active" : "nav_list"}>
+            <li onClick={handleNavLink}>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li onClick={handleNavLink}>
+              <NavLink to="/men">Men</NavLink>
+            </li>
+            <li onClick={handleNavLink}>
+              <NavLink to="/women">Women</NavLink>
+            </li>
+            <li onClick={handleNavLink}>
+              <a href="#">About</a>
+            </li>
+            <li onClick={handleNavLink}>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
         </div>
-    );
-}
+        <div className="right">
+          <Link to="/collection">
+            <img
+              className="cart-logo"
+              src="/images/icon-cart.png"
+              alt="cart-icon"
+            />
+          </Link>
+          <img
+            className="avatar-logo"
+            src="/images/image-avatar.png"
+            alt="avatar-img"
+          />
+        </div>
+      </nav>
+    </div>
+  );
+};

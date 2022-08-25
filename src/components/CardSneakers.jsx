@@ -1,7 +1,10 @@
 import React from "react";
+import {useNavigate} from 'react-router-dom'
 import "../components/styles/Cardsneaker.css";
 
 export const CardSneakers = ({ image, sneakerName, price, id }) => {
+  const navigateToCart = useNavigate();
+
   return (
     <div>
         <div key={id} className="card_container">
@@ -11,7 +14,7 @@ export const CardSneakers = ({ image, sneakerName, price, id }) => {
           <div className="product_details">
             <h2 className="title">{sneakerName}</h2>
             <p className="price">Price: {price}</p>
-            <button className="add_card">Add to Cart</button>
+            <button className="add_card" onClick={() => navigateToCart('collection')}>Add to Cart</button>
           </div>
         </div>
       </div>
