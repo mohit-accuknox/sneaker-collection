@@ -1,0 +1,54 @@
+.containerBanner{
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/public/images/banner.jpg');
+    height: 60vh;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.titleBanner{
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.infoText{
+    color: white;
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .containerBanner{
+        height: 50vh;
+    }
+
+    .titleBanner{
+        font-size: 3.5rem;
+    }
+
+    .infoText{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .containerBanner{
+        height: 40vh;
+    } 
+
+    .titleBanner{
+        font-size: 2.8rem;
+    }
+
+    .infoText{
+        font-size: 1.5rem;
+    }
+}

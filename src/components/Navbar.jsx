@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import "./Navbar.css";
+import './Navbar.css'
 
 export const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -14,7 +14,7 @@ export const Navbar = () => {
       <nav className="nav_items">
         <div className="left">
           <img
-            src="/images/icon-menu.png"
+            src={isActive ? "/images/icon_close.png" : "/images/icon-menu.png"}
             alt="menu-icon"
             className="menu"
             onClick={() => {
@@ -27,16 +27,16 @@ export const Navbar = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li onClick={handleNavLink}>
-              <NavLink to="/men">Men</NavLink>
+              <NavLink to="men">Men</NavLink>
             </li>
             <li onClick={handleNavLink}>
-              <NavLink to="/women">Women</NavLink>
+              <NavLink to="women">Women</NavLink>
             </li>
             <li onClick={handleNavLink}>
-              <a href="#">About</a>
+            <NavLink to="about">About</NavLink>
             </li>
             <li onClick={handleNavLink}>
-              <a href="#">Contact</a>
+            <NavLink to="contact">Contact</NavLink>
             </li>
           </ul>
         </div>

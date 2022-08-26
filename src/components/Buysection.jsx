@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import "./Buysection.css"
+import "../components/styles/Buysection.css"
 
 export const Buysection = () => {
     const [quantity, setQuantity] = useState(0);

@@ -1,0 +1,55 @@
+.containerAbout{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.whoAre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.whoAre img{
+    width: 50%;
+}
+
+.whoAreInfo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.whoAreInfo h3{
+    font-size: 4.5rem;
+}
+
+.whoAreInfo p{
+    font-size: 2.8rem;
+    text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+    .whoAre{
+        flex-direction: column;
+        gap: 4rem;
+        padding: 1.5rem;
+    }
+
+    .whoAre img{
+        width: 100%;
+    }
+    
+    .whoAreInfo h3{
+        font-size: 3.5rem;
+    }
+
+    .whoAreInfo p{
+        font-size: 2.5rem;
+        line-height: 4rem;
+        text-align: left;
+        font-weight: 300;
+    }
+}
