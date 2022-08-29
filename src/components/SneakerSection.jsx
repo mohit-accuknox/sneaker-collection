@@ -8,11 +8,14 @@ export const SneakerSection = ({ title, items }) => {
       <section className="container">
         <h3 className="heading">{title}</h3>
         <div className="card_content">
-        {items.map(item => {
-            return <CardSneakers image={item.img} sneakerName = {item.name} price = {item.price} id = {item.id}/>
-        })}
+          {items.map((item) => {
+            return (
+              <CardSneakers
+                item={item}
+              />
+            );
+          })}
         </div>
-        
       </section>
     </div>
   );

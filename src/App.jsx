@@ -4,6 +4,7 @@ import "./App.css";
 import About from "./components/AboutSection/About";
 import Banner from "./components/Banner/Banner";
 import { Buysection } from "./components/Buysection";
+import Cart from "./components/Cart/Cart";
 import { CollectionSection } from "./components/CollectionSection";
 import Contact from "./components/ContactSection/Contact";
 import { MenCollection } from "./components/MenCollection";
@@ -23,6 +24,7 @@ function App() {
         <Route path="*" element={<PageNotFound />} />
         <Route path='about' element={<About/>}/>
         <Route path="contact" element={<Contact/>}/>
+        <Route path="cart" element={<Cart/>}/>
       </Routes>
      
     </div>

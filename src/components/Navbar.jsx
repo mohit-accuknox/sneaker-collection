@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import { cartContext } from "../ContextApi";
+import Cart from "./Cart/Cart";
 import './Navbar.css'
 
 export const Navbar = () => {
@@ -8,6 +10,8 @@ export const Navbar = () => {
   const handleNavLink = () => {
     setIsActive(isActive, "nav_list");
   };
+
+  const {cart} = useContext(cartContext);
 
   return (
     <div>
@@ -41,12 +45,13 @@ export const Navbar = () => {
           </ul>
         </div>
         <div className="right">
-          <Link to="/collection">
+          <Link to="/cart">
             <img
               className="cart-logo"
               src="/images/icon-cart.png"
               alt="cart-icon"
             />
+            {cart.length}
           </Link>
           <img
             className="avatar-logo"
